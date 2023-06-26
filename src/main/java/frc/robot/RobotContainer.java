@@ -333,6 +333,25 @@ public class RobotContainer {
         SmartDashboard.putNumber("heading", headingDisplay);
 
         SmartDashboard.putNumber("speed m/s", swerveSys.getAverageDriveVelocityMetersPerSecond());
-        SmartDashboard.putNumber("speed mph", swerveSys.getAverageDriveVelocityMetersPerSecond() * 2.23694);
+        // SmartDashboard.putNumber("speed mph", swerveSys.getAverageDriveVelocityMetersPerSecond() * 2.23694);
+
+        // COMPRESSOR
+        SmartDashboard.putNumber("pressure PSI", compressorSys.getPressurePSI());
+
+        SmartDashboard.putString("compressor status", (compressorSys.isEnabled() ? (compressorSys.isRunning() ? "PRESSURIZING" : "OFF") : "DISABLED"));
+        SmartDashboard.putNumber("compressor elapsed", compressorSys.getRunTimeSeconds());
+        SmartDashboard.putNumber("compressor turn on", compressorSys.getTurnOnCount());
+
+        // INTAKE
+        SmartDashboard.putNumber("intake inches", intakeSys.getCurrentPosition());
+        SmartDashboard.putNumber("roller rpm", intakeSys.getCurrentSpeedRPM());
+
+        // LIFT
+        SmartDashboard.putNumber("lift inches", liftSys.getCurrentPosition());
+        SmartDashboard.putString("lift articulation", (liftSys.isArticulationOverride() ? (liftSys.isArticulatedDown() ? "DOWN" : "UP") : "UP - OVERRIDE"));
+        SmartDashboard.putNumber("lift target", liftSys.getTargetInches());
+
+        // CLAW
+        SmartDashboard.putString("claw status", (clawSys.isOpen() ? "OPEN" : "CLOSED"));
     }
 }

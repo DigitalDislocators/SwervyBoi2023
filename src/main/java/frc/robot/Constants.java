@@ -114,11 +114,7 @@ public class Constants {
     public static final class AutoConstants {
 
         public static final double maxVelMetersPerSec = 3.25;
-<<<<<<< HEAD
-        public static final double maxAccelMetersPerSecondSq = 1.625; //1.5
-=======
         public static final double maxAccelMetersPerSecondSq = 1.625;
->>>>>>> 6ddad2a720cbb3d96bb1f609ba37c239b20e0fa7
 
         public static final double drivekP = 12.8;
         public static final double drivekD = 0.085;
@@ -153,7 +149,6 @@ public class Constants {
             
             return rotController;
         }
-<<<<<<< HEAD
 
         public static final double driveOntoChargeStationVelMetersPerSecond = 0.75;
         public static final double driveOverChargeStationVelMetersPerSecond = 0.35;
@@ -164,8 +159,6 @@ public class Constants {
         public static final double chargeStationBalancedToleranceDeg = 11.5;
 
         public static final double dockVelMetersPerSecond = 0.06;
-=======
->>>>>>> 6ddad2a720cbb3d96bb1f609ba37c239b20e0fa7
     }
 
     public static final class VisionConstants {
@@ -203,7 +196,6 @@ public class Constants {
             return rotController;
         }
     }
-<<<<<<< HEAD
 
     public static final class CompressorConstants {
 
@@ -313,6 +305,4 @@ public class Constants {
 
         public static final double rollerConeRPM = 3000;
     }
-=======
->>>>>>> 6ddad2a720cbb3d96bb1f609ba37c239b20e0fa7
 }
