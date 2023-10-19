@@ -25,7 +25,7 @@ public class LightsSys extends SubsystemBase {
 
     private GameElement status = GameElement.kNone;
 
-    private final Color neutralColor = new Color(50, 255, 0);
+    private final Color neutralColor = new Color(43, 226, 36);
     private final Color coneColor = new Color(150, 128, 0);
     private final Color cubeColor = new Color(204, 0, 255);
 
